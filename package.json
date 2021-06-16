@@ -1,0 +1,22 @@
+{
+  "name": "@idirdev/depcheck-cli",
+  "version": "1.0.0",
+  "description": "Find unused and missing dependencies in Node.js projects",
+  "main": "src/index.js",
+  "author": "idirdev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idirdev/depcheck-cli.git"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "bin": {
+    "depcheck": "bin/cli.js"
+  }
+}
