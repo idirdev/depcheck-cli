@@ -1,0 +1,33 @@
+{
+  "name": "@idirdev/depcheck-cli",
+  "version": "1.0.0",
+  "description": "Dependency audit and analysis CLI tool",
+  "author": "idirdev",
+  "license": "MIT",
+  "bin": {
+    "depcheck": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "semver": "^7.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/semver": "^7.5.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  },
+  "keywords": ["dependency", "audit", "cli", "security", "licenses", "outdated"],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
