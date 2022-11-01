@@ -104,3 +104,38 @@ npm run dev -- audit
 ## License
 
 MIT
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+DepCheck CLI est un outil en ligne de commande complet pour auditer et maintenir les dépendances de vos projets Node.js. Il permet de détecter les vulnérabilités de sécurité, les packages obsolètes, les licences non conformes et les dépendances inutilisées, avec une sortie JSON adaptée aux pipelines CI/CD.
+
+### Installation
+```bash
+npm install -g @idirdev/depcheck-cli
+```
+
+Ou via npx :
+
+```bash
+npx @idirdev/depcheck-cli audit
+```
+
+### Utilisation
+```bash
+# Audit de sécurité
+depcheck audit
+
+# Packages obsolètes
+depcheck outdated
+
+# Vérification des licences
+depcheck licenses
+
+# Dépendances inutilisées
+depcheck unused
+```
+
+Consultez la section **Commands** ci-dessus pour la référence complète des options et filtres disponibles.
