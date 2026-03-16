@@ -18,5 +18,9 @@
   },
   "bin": {
     "depcheck": "bin/cli.js"
+  },
+  "homepage": "https://github.com/idirdev/depcheck-cli",
+  "bugs": {
+    "url": "https://github.com/idirdev/depcheck-cli/issues"
   }
 }
